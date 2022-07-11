@@ -1,0 +1,561 @@
+:root {
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-lightgray: hsl(212, 45%, 89%);
+  --color-grayishblue: hsl(220, 15%, 55%);
+  --color-darkblue: hsl(218, 44%, 22%);
+  --color-darkblue-b: #1b1b32;
+  --color-darkred: #321b1b;
+  --color-darkgreen: #1b321b;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-darkred-alpha: rgba(50, 27, 27, 0.8);
+  --color-darkgreen-alpha: rgba(27, 50, 27, 0.8);
+  --color-green: #37af65;
+  --violet: rgb(170, 12, 159);
+  --glass: rgba(255, 255, 255, 0.3);
+  --glass-border: solid 1px rgba(255, 255, 255, 0.5);
+  --glass-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* ------------------------- */
+/* Estilos Generales */
+/* ------------------------- */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.texto-blanco {
+  font-weight: 700;
+  color: #fff;
+}
+
+.texto-negro {
+color: #000;
+}
+
+
+#fp-nav ul li a span {
+  background: #fff;
+;
+}
+
+#fp-nav ul li .fp-tooltip {
+  color: #fff;
+;
+}
+
+/*nav bar*/
+
+.nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 70;
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.nav li,
+.nav a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'oswald', sans-serif;
+  color: #fff;
+  transition: .5s ease;
+
+}
+
+.nav li.active {
+  border-bottom: 2px solid #fff;
+;
+}
+
+.menu li a {
+  transition: .5s ease;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li.active a,
+.menu li:hover a {
+ color: #fff;
+;
+}
+/*Header*/
+
+
+.header {
+  background: url(./icon.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-color: #000;
+
+}
+
+
+.icon-down {
+  position: absolute;
+  z-index: 99;
+  bottom: 3%;
+  left:50%;
+  font-size: 40px;
+  animation: down-up 1s ease infinite;
+}
+.icon-up {
+  position: absolute;
+  z-index: 99;
+  top: 3%;
+  left:50%;
+  font-size: 40px;
+  animation: up-down 1s ease infinite;
+}
+
+/*VIDEO*/
+
+.bg-video {
+  display: block;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 95%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/*QUIENES SOMOS*/
+
+.header-quienes-somos{
+position: relative;
+top: -150px;
+font-size: 20px;
+margin: 50px;
+color: #fff;
+
+}
+
+.show-text {
+  opacity: 0;
+  font-family: 'Oswald', sans-serif;
+  transition: .7s ease all;
+  color: #fff;
+
+}
+
+.service {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.service .item-service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+/* .service .item-service:hover i{
+  background: #fff;
+  animation: shake 1.5s ease infinite;
+  color: #30313a;
+} */
+
+.service p{
+  font-size: 30px;
+  font-family: 'oswald', sans-serif;
+  opacity: 1;
+  color: #fff;
+
+}
+
+.service i{
+  z-index: 10;
+  font-size: 50px;
+  display: flex;
+  width: 120px;
+  height: 120px;
+  background: #e82727;
+  color: #fff;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  margin: 20px 20px;
+  transition: 1s;
+}
+
+
+
+/*imagenes y videos*/
+
+.productos article {
+  background-repeat: no-repeat;
+}
+
+.imagenes article:nth-child(1) {
+  background-image: url("./img1.jpg");
+  background-size: contain;
+  background-position: center;
+}
+.imagenes article:nth-child(2) {
+  background-image: url("./img2.jpg");
+  background-size: contain;
+  background-position: center;
+}
+.imagenes article:nth-child(3) {
+  background-image: url("./img3.jpg");
+  background-size: contain;
+  background-position: center;
+}
+.imagenes article:nth-child(4) {
+  background-image: url("./img4.jpg");
+  background-size: contain;
+  background-position: center;
+}
+.imagenes article:nth-child(5) {
+  background-image: url("./img5.jpg");
+  background-size: contain;
+  background-position: center;
+}
+.imagenes article:nth-child(6) {
+  background-image: url("./img6.jpg");
+  background-size: contain;
+  background-position: center;
+}
+.imagenes article:nth-child(7) {
+  background-image: url("./img7.jpg");
+  background-size: contain;
+  background-position: center;
+}
+.imagenes article:nth-child(8) {
+  background-image: url("./img8.jpg");
+  background-size: contain;
+  background-position: center;
+}
+.imagenes article:nth-child(9) {
+  background-image: url("./img9.jpg");
+  background-size: contain;
+  background-position: center;
+}
+.imagenes article:nth-child(10) {
+  background-image: url("./img10.jpg");
+  background-size: contain;
+  background-position: center;
+}
+
+
+/* Clases de fullpage.js - Flechas de slide */
+
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+  top: 95%;
+}
+
+.fp-controlArrow.fp-prev {
+  left: 30px;
+  border-width: 20px 20px 20px 0;
+  border-color: transparent #fff  transparent transparent;
+  animation: left-right 1s ease infinite;
+}
+
+.fp-controlArrow.fp-next {
+  right: 30px;
+  border-width: 20px 20px 20px 20px;
+  border-color: transparent transparent transparent #fff;
+  animation: right-left 1s ease infinite;
+}
+
+/*VIDEOS*/
+
+.section-videos {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  width: 100%;
+}
+
+.videoclip {
+  margin: 25px 50px;
+}
+
+.section-videos .videoclip iframe{
+  width: 800px;
+  height: 400px;
+}
+
+
+
+/* Footer */
+
+
+.footer .texto-footer {
+  text-transform: uppercase;
+  font-size: 60px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.footer h2 {
+  opacity: 0;
+  font-family: 'Oswald', sans-serif;
+  transition: .7s ease all;
+  color: #fff
+}
+
+.footer .redes-sociales {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-size: 50px;
+}
+
+.footer .redes-sociales a {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  color: #30313a;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  margin: 0 20px;
+}
+
+.footer .facebook i {color: #3b5998;}
+.footer .instagram i {color: #c13584;}
+.footer .whatsapp i {color: #25D366}
+
+.footer .facebook:hover {
+  background: #3b5998;
+  animation: shake .5s ease infinite;
+}
+
+.footer .instagram:hover {
+  background: #c13584;
+  animation: shake .5s ease infinite;
+}
+
+.footer .whatsapp:hover {
+  background: #25D366;
+  animation: shake .5s ease infinite;
+}
+
+.footer .facebook:hover i {color: #fff}
+.footer .instagram:hover i  {color: #fff}
+.footer .whatsapp:hover i  {color: #fff}
+
+/* Responsive Design */
+@media screen and (max-width: 1440px){
+  .section-videos .videoclip iframe {
+    width: 600px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu li a,
+  .menu li.active a {
+    font-size: 18px;
+  }
+
+  .service i{
+    font-size: 35px;
+    width: 70px;
+    height: 70px;
+  }
+  .service p{
+    font-size: 19px;
+  }
+  .section-videos .videoclip iframe{
+    width: 325px;
+    height: 200px;
+  }
+  .footer h2 {
+    font-size: 15px;
+  }
+  .footer .redes-sociales {
+    font-size: 30px;
+  }
+  .footer .redes-sociales a{
+    width: 70px;
+    height: 70px;
+  }
+  .footer .texto-footer {
+    font-size: 40px;
+  }
+
+}
+
+@media screen and (max-width: 576px){
+  .fp-controlArrow.fp-next {
+    right: 1px;
+  }
+  .fp-controlArrow.fp-prev {
+    left: 1px;
+  }
+  .icon-down{
+    bottom: 4%;
+    font-size: 30px;
+  }
+  .icon-up{
+    top: 7%;
+    font-size: 30px;
+  }
+  .header-quienes-somos{
+    font-size: 13px;
+    top:1px;
+  }
+  .service i {
+    font-size: 35px;
+    width: 70px;
+    height: 70px;
+    flex-flow: column;
+  }
+  .service p {
+    font-size: 19px;
+  }
+  .service {
+    flex-direction: column;
+    position: relative;
+    right:31%;
+
+  }
+  .service .item-service{
+    flex-direction: row-reverse;
+    position: relative;
+    left: 100px;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+  }
+  .nav {
+    display: block;
+    text-align: center;
+  }
+
+  .section-videos{flex-flow: column;}
+
+  .videoclip{margin: 50px 0}
+
+  .section-videos .videoclip iframe{
+    width: 500px;
+    height: 250px;
+  }
+  #fp-nav{
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 450px){
+  .bg-video {
+    display: block;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 50%;
+    margin: 0 auto;
+  }
+
+  .nav a {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .nav li,
+  .nav a {
+    margin: 0;
+  }
+
+  #fp-nav{
+    opacity: 0;
+  }
+
+  .section-videos .videoclip iframe{
+    width: 400px;
+    height: 200px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu li a,
+  .menu li.active a {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  .footer .texto-footer {
+    font-size: 18px;
+  }
+
+  .footer .redes-sociales a {
+    width: 50px;
+    height: 50px;
+  }
+}
+/* ANIMACIONES */
+
+@keyframes up-down {
+  0%{transform: translateY(10px);}
+  25%{transform: translateY(0);}
+  100%{transform: translateY(10px);}
+}
+@keyframes down-up {
+  0%{transform: translateY(-10px);}
+  25%{transform: translateY(0);}
+  100%{transform: translateY(-10px);}
+}
+@keyframes left-right {
+  0%{transform: translateX(10px);}
+  25%{transform: translateX(0);}
+  100%{transform: translateX(10px);}
+}
+@keyframes right-left {
+  0%{transform: translateX(-10px);}
+  25%{transform: translateX(0);}
+  100%{transform: translateX(-10px);}
+}
+
+@keyframes shake {
+  0%{transform: rotate(15deg);}
+  10%{transform: rotate(0);}
+  20%{transform: rotate(-15deg);}
+  30%{transform: rotate(0deg);}
+}
+
+
+
+
+/* tengo que modificar la parte del quienes somos para
+hacerla responsive
+
+poner un hover o un onclick para mostrar mas informacion acerca del servicio
+crear un grid para que se acomode solo en caso de tener dispositivos con menor resolucion
+la flecha icon-up desplazarla hacia abajo para que no choque con el nav en dispositivos menores a 768px
+*/
