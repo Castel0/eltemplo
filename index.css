@@ -369,6 +369,7 @@ color: #fff;
 .footer .whatsapp:hover i  {color: #fff}
 
 /* Responsive Design */
+
 @media screen and (max-width: 1440px){
   .section-videos .videoclip iframe {
     width: 600px;
@@ -426,7 +427,7 @@ color: #fff;
   }
   .header-quienes-somos{
     font-size: 13px;
-    top:1px;
+    top:3em;
   }
   .service i {
     font-size: 35px;
@@ -519,6 +520,7 @@ color: #fff;
     height: 50px;
   }
 }
+
 /* ANIMACIONES */
 
 @keyframes up-down {
@@ -548,14 +550,3 @@ color: #fff;
   20%{transform: rotate(-15deg);}
   30%{transform: rotate(0deg);}
 }
-
-
-
-
-/* tengo que modificar la parte del quienes somos para
-hacerla responsive
-
-poner un hover o un onclick para mostrar mas informacion acerca del servicio
-crear un grid para que se acomode solo en caso de tener dispositivos con menor resolucion
-la flecha icon-up desplazarla hacia abajo para que no choque con el nav en dispositivos menores a 768px
-*/
