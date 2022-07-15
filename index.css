@@ -152,6 +152,11 @@ color: #fff;
 
 }
 
+.container-quienes-somos{
+  width: 70%;
+  margin: 0 auto;
+}
+
 .show-text {
   opacity: 0;
   font-family: 'Oswald', sans-serif;
@@ -295,15 +300,20 @@ color: #fff;
   align-items: center;
   background-color: #000;
   width: 100%;
+  height: 100%;
 }
 
-.videoclip {
-  margin: 25px 50px;
+.section-videos .videoclip {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-videos .videoclip iframe{
-  width: 800px;
-  height: 400px;
+  width: 80%;
+  height: 80%;
 }
 
 
@@ -322,7 +332,9 @@ color: #fff;
   opacity: 0;
   font-family: 'Oswald', sans-serif;
   transition: .7s ease all;
-  color: #fff
+  color: #fff;
+  width: 75%;
+  margin: 30px auto;
 }
 
 .footer .redes-sociales {
@@ -370,10 +382,17 @@ color: #fff;
 
 /* Responsive Design */
 
-@media screen and (max-width: 1440px){
-  .section-videos .videoclip iframe {
-    width: 600px;
-    height: 350px;
+@media screen and (max-width: 1024px){
+  .service{
+    flex-wrap: wrap;
+  }
+  .header-quienes-somos {
+    top:-80px;
+    font-size: 22px;
+
+  }
+  .container-quienes-somos{
+    width: 90%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -381,6 +400,18 @@ color: #fff;
   .menu li.active a {
     font-size: 18px;
   }
+  .container-quienes-somos {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.header-quienes-somos{
+  top:-85px;
+}
+
+.service{
+  flex-wrap: wrap;
+}
 
   .service i{
     font-size: 35px;
@@ -390,10 +421,10 @@ color: #fff;
   .service p{
     font-size: 19px;
   }
-  .section-videos .videoclip iframe{
+  /* .section-videos .videoclip iframe{
     width: 325px;
     height: 200px;
-  }
+  } */
   .footer h2 {
     font-size: 15px;
   }
@@ -429,6 +460,7 @@ color: #fff;
     font-size: 13px;
     top:3em;
   }
+
   .service i {
     font-size: 35px;
     width: 70px;
@@ -450,20 +482,19 @@ color: #fff;
     left: 100px;
     margin: 0;
     padding: 0;
-    height: 80px;
+    height: 68px;
   }
   .nav {
     display: block;
     text-align: center;
   }
 
-  .section-videos{flex-flow: column;}
 
-  .videoclip{margin: 50px 0}
+
 
   .section-videos .videoclip iframe{
-    width: 500px;
-    height: 250px;
+    width: 97%;
+    height: 83%;
   }
   #fp-nav{
     opacity: 0;
@@ -471,7 +502,7 @@ color: #fff;
 }
 
 @media screen and (max-width: 450px){
-  .bg-video {
+  /* .bg-video {
     display: block;
     z-index: 10;
     justify-content: center;
@@ -479,7 +510,19 @@ color: #fff;
     width: 75%;
     height: 50%;
     margin: 0 auto;
-  }
+  } */
+
+ .title{
+  font-size: 25px;
+  position: relative;
+  top: -88px;
+ }
+
+ .header-quienes-somos{
+  margin: 30px;
+  top: 1em;
+  font-size: 77px;
+ }
 
   .nav a {
     font-size: 16px;
@@ -496,8 +539,8 @@ color: #fff;
   }
 
   .section-videos .videoclip iframe{
-    width: 400px;
-    height: 200px;
+    width: 97%;
+    height: 79%;
   }
 
   .menu {
@@ -518,6 +561,9 @@ color: #fff;
   .footer .redes-sociales a {
     width: 50px;
     height: 50px;
+  }
+  .service{
+    right: 35%;
   }
 }
 
