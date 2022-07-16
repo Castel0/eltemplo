@@ -494,7 +494,7 @@ color: #fff;
 
   .section-videos .videoclip iframe{
     width: 97%;
-    height: 83%;
+    height: 75%;
   }
   #fp-nav{
     opacity: 0;
@@ -515,7 +515,7 @@ color: #fff;
  .title{
   font-size: 25px;
   position: relative;
-  top: -88px;
+  top: -50px;
  }
 
  .header-quienes-somos{
@@ -540,7 +540,7 @@ color: #fff;
 
   .section-videos .videoclip iframe{
     width: 97%;
-    height: 79%;
+    height: 65%;
   }
 
   .menu {
